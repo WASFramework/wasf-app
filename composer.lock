@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c25464ca281c26fda96544d68e989a5",
+    "content-hash": "0c4ece0cd581aceb13e318e9a5ab9d57",
     "packages": [
         {
             "name": "abesarrr/wasf-core",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abesarrr/wasf-core.git",
-                "reference": "b2c5c290e529d90c1212088fe7e4d56129fe73aa"
+                "reference": "5df32cf47e389e6f0599397c5acf93c20fe313c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abesarrr/wasf-core/zipball/b2c5c290e529d90c1212088fe7e4d56129fe73aa",
-                "reference": "b2c5c290e529d90c1212088fe7e4d56129fe73aa",
+                "url": "https://api.github.com/repos/abesarrr/wasf-core/zipball/5df32cf47e389e6f0599397c5acf93c20fe313c4",
+                "reference": "5df32cf47e389e6f0599397c5acf93c20fe313c4",
                 "shasum": ""
             },
             "require": {
@@ -40,10 +40,10 @@
             ],
             "description": "WASF PHP Framework Core",
             "support": {
-                "source": "https://github.com/abesarrr/wasf-core/tree/v1.0.0",
+                "source": "https://github.com/abesarrr/wasf-core/tree/v1.0.1",
                 "issues": "https://github.com/abesarrr/wasf-core/issues"
             },
-            "time": "2025-11-21T11:23:06+00:00"
+            "time": "2025-11-21T14:51:23+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",

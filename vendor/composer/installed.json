@@ -1,0 +1,40 @@
+{
+    "packages": [
+        {
+            "name": "abesarrr/wasf-core",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../wasf-core",
+                "reference": "563a36058aca4de604e7516093b960d199a09b8c"
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "bin": [
+                "bin/wasf"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Wasf\\": "src/"
+                },
+                "files": [
+                    "src/Support/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "WASF PHP Framework Core",
+            "transport-options": {
+                "relative": true
+            },
+            "install-path": "../abesarrr/wasf-core"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

@@ -1,0 +1,185 @@
+2025-11-17 15:09:51 Controller \App\Controllers\DashboardController not found
+#0 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('DashboardContro...', Array)
+#1 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#2 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(39): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#3 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(39): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#6 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#7 {main}
+
+2025-11-17 15:09:53 Controller \App\Controllers\DashboardController not found
+#0 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('DashboardContro...', Array)
+#1 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#2 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(39): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#3 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(39): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#6 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#7 {main}
+
+2025-11-17 15:10:24 Controller \App\Controllers\DashboardController not found
+#0 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('DashboardContro...', Array)
+#1 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#2 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(39): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#3 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(39): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#6 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#7 {main}
+
+2025-11-17 15:40:57 View home not found at C:\laragon\www\wasframework2\wasf-app\public\app\Views\home.wasf.php
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(34): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:42:13 View home not found at C:\laragon\www\wasframework2\wasf-app\public\app\Views\home.wasf.php
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(34): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:42:40 View home not found at C:\laragon\www\wasframework2\wasf-app\app\Views\home.blade.php
+#0 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#1 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#2 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#7 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#8 {main}
+
+2025-11-17 15:44:02 syntax error, unexpected token ":"
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:44:33 syntax error, unexpected token ":"
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:45:06 syntax error, unexpected token ":"
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(70): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:47:56 syntax error, unexpected token "else", expecting end of file
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:50:44 syntax error, unexpected token "else", expecting end of file
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:51:03 syntax error, unexpected token ":"
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:51:21 syntax error, unexpected token "else", expecting end of file
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:51:29 syntax error, unexpected token "else", expecting end of file
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(46): Wasf\View\Blade::renderSingle('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:53:43 syntax error, unexpected token ":"
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(72): Wasf\View\Blade::renderView('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+
+2025-11-17 15:53:45 syntax error, unexpected token ":"
+#0 C:\laragon\www\wasframework2\wasf-core\src\View\Blade.php(72): Wasf\View\Blade::renderView('home', Array)
+#1 C:\laragon\www\wasframework2\wasf-app\app\Controllers\HomeController.php(17): Wasf\View\Blade::render('home', Array)
+#2 [internal function]: App\Controllers\HomeController->index(Object(Wasf\Http\Request), Object(Wasf\Http\Response))
+#3 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(141): ReflectionMethod->invokeArgs(Object(App\Controllers\HomeController), Array)
+#4 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(47): Wasf\Routing\Dispatcher->callAction('HomeController@...', Array)
+#5 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(44): Wasf\Routing\Dispatcher->Wasf\Routing\{closure}(Array)
+#6 C:\laragon\www\wasframework2\wasf-core\src\Http\Pipeline.php(48): Wasf\Http\Pipeline->Wasf\Http\{closure}(Array)
+#7 C:\laragon\www\wasframework2\wasf-core\src\Routing\Dispatcher.php(46): Wasf\Http\Pipeline->then(Object(Closure))
+#8 C:\laragon\www\wasframework2\wasf-app\public\index.php(69): Wasf\Routing\Dispatcher->dispatchRoute(Array)
+#9 {main}
+

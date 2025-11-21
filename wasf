@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+$app = new \Wasf\Foundation\Application(__DIR__);
+$kernel = new \Wasf\Console\Kernel($app);
+
+$argv = $_SERVER['argv'];
+array_shift($argv);
+$cmd = array_shift($argv) ?? 'help';
+
+$kernel->handle($cmd, $argv);

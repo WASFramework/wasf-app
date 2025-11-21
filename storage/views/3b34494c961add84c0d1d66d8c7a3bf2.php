@@ -17,7 +17,7 @@
 
                         <form action="/profile/edit" method="POST" enctype="multipart/form-data">
 
-                            <?php echo '<input type="hidden" name="_token" value="3a8fad31b0637b5adb947a4e59582bcdb9809bb2d1a421909b9ecdf89ed02033">'; ?>
+                            <?php echo '<input type="hidden" name="_token" value="9933f4ac6235b4b227dbb6cbf59ec88398880db2574e347a9eec5030244624e1">'; ?>
 
                             <div class="mb-3">
                                 <label class="form-label fw-bold">Name</label>

@@ -49,6 +49,19 @@ foreach ($aliases as $alias => $class) {
     }
 }
 
+$timezone = Config::get('app.timezone', 'UTC');
+date_default_timezone_set($timezone);
+
+// --------------------------------------------------
+// Faker Locale Support
+// --------------------------------------------------
+if (class_exists(\Faker\Factory::class)) {
+    $fakerLocale = Config::get('app.faker_locale', 'en_US');
+    $app->bind('faker', function() use ($fakerLocale) {
+        return Faker\Factory::create($fakerLocale);
+    });
+}
+
 // --------------------------------------------------
 // 6. Connect Database BEFORE Auth system uses it!
 // --------------------------------------------------

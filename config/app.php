@@ -6,6 +6,10 @@ return [
     'env'  => env('APP_ENV', 'local'),
     'debug' => env('APP_DEBUG', true),
     'url' => env('APP_URL', 'http://localhost'),
+    'timezone' => env('TIME_ZONE', 'Asia/Jakarta'),
+    'locale' => 'id',
+    'fallback_locale' => 'en',
+    'faker_locale' => 'id_ID',
 
     'aliases' => [
         'Blade'     => Wasf\Support\Facades\Blade::class,

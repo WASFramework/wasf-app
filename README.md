@@ -35,7 +35,8 @@ WASF adalah framework PHP modern yang mengusung konsep sederhana, modular, dan m
 ### 1️⃣ Buat project baru
 
 ```bash
-composer create-project abesarrr/wasf-app myproject
+composer create-project wasframework/wasf-app myproject
+
 cd myproject
 ```
 

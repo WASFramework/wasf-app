@@ -2,27 +2,6 @@
 
 ---
 
-# 📘 Daftar Isi
-
-* [✨ Fitur Utama](#-fitur-utama)
-* [⚡ Instalasi](#-instalasi)
-
-  * [Opsi 1 — WASF Installer](#opsi-1--wasf-installer)
-  * [Opsi 2 — Composer](#opsi-2--composer)
-* [📚 Struktur Direktori](#-struktur-direktori)
-* [🧱 Routing](#-routing)
-* [🧩 Module HMVC](#-module-hmvc)
-* [🛠 Generator CLI](#-generator-cli)
-* [🔧 Utilitas Tambahan](#-utilitas-tambahan)
-* [🧪 Mode Development](#-mode-development)
-* [🧵 Kontribusi](#-kontribusi)
-* [🛡 Keamanan](#-keamanan)
-* [🗺️ Roadmap](#️-roadmap)
-* [📄 Lisensi](#-lisensi)
-* [🧵 Repositori](#-repositori)
-
----
-
 # ✨ Fitur Utama
 
 * ⚡ **Super Lightweight** — cepat, kecil, dan hemat resource
@@ -70,12 +49,13 @@ cp .env.example .env
 Atur database:
 
 ```env
-DB_DRIVER=mysql
-DB_HOST=127.0.0.1
+DB_HOST=localhost
 DB_PORT=3306
-DB_DATABASE=wasfapp
-DB_USERNAME=root
-DB_PASSWORD=
+DB_NAME=wasf_database
+DB_USER=root
+DB_PASS=
+DB_CHARSET=utf8mb4
+DB_CONNECTION=mysql
 ```
 
 ## Generate Key

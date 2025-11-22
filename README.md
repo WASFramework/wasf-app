@@ -82,13 +82,17 @@ http://localhost:8080
 app/
  ├─ Controllers/
  ├─ Models/
- ├─ Views/
- └─ Modules/
-      └─ Blog/
+ └─ Views/
 bootstrap/
 config/
 public/
 resources/
+Modules/
+ └─ Blog/
+     ├─ Controllers/
+     ├─ Models/
+     ├─ Views/
+     └─ routes.php
 routes/
  └─ web.php
 storage/

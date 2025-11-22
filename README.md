@@ -1,52 +1,73 @@
 # 🚀 WASF PHP Framework
 
-**Lightweight • Modular • Fast**
+---
 
-WASF adalah framework PHP modern yang mengusung konsep sederhana, modular, dan mudah dikembangkan. Dibangun dengan pendekatan HMVC, Blade templating, dan console command, WASF cocok untuk developer yang ingin membuat aplikasi cepat tanpa kompleksitas berlebihan.
+# 📘 Daftar Isi
 
-<p align="center">
-  <img src="https://github.com/abesarrr/wasf-app/blob/main/public/assets/img/favicon-16.png?raw=true" alt="WASF Logo" width="180px">
-</p>
+* [✨ Fitur Utama](#-fitur-utama)
+* [⚡ Instalasi](#-instalasi)
 
-<p align="center">
-  <strong>Simpel. Cepat. Produktif.</strong><br>
-  Framework minimalis untuk aplikasi modern.
-</p>
+  * [Opsi 1 — WASF Installer](#opsi-1--wasf-installer)
+  * [Opsi 2 — Composer](#opsi-2--composer)
+* [📚 Struktur Direktori](#-struktur-direktori)
+* [🧱 Routing](#-routing)
+* [🧩 Module HMVC](#-module-hmvc)
+* [🛠 Generator CLI](#-generator-cli)
+* [🔧 Utilitas Tambahan](#-utilitas-tambahan)
+* [🧪 Mode Development](#-mode-development)
+* [🧵 Kontribusi](#-kontribusi)
+* [🛡 Keamanan](#-keamanan)
+* [🗺️ Roadmap](#️-roadmap)
+* [📄 Lisensi](#-lisensi)
+* [🧵 Repositori](#-repositori)
 
 ---
 
-## ✨ Fitur Utama
+# ✨ Fitur Utama
 
-- ⚡ **Super Lightweight** — Cepat, kecil, dan tidak boros resource
-- 🧩 **Modular HMVC Architecture** — Module terisolasi & scalable
-- 🧱 **Blade Templating Engine** — View lebih bersih dan powerful
-- 🛠 **Powerful Console Commands** — Generator otomatis untuk semua komponen
-- 🧬 **Autoloading Full Composer (PSR-4)**
-- 🗂 **Routing Modern** — Bersih, simpel, fleksibel
-- 🗄 **Database PDO Wrapper** — Mudah dikustomisasi
-- 🔐 **Environment (.env) Support**
-- 🔑 **Application Key (WASF_KEY)**
-- 📦 **Extensible** — Mudah ditambah package lain
+* ⚡ **Super Lightweight** — cepat, kecil, dan hemat resource
+* 🧩 **Arsitektur HMVC Modular**
+* 🧱 **Blade Templating Engine**
+* 🛠 **Powerful Console Commands**
+* 🧬 **Autoloading PSR-4 Composer**
+* 🔐 **Dukungan .env**
+* 🔑 **WASF_KEY Generator**
+* 🗄 **PDO Database Wrapper**
+* 📦 **Extensible — mudah dikembangkan**
 
 ---
 
-# 📦 Instalasi
+# ⚡ Instalasi
 
-### 1️⃣ Buat project baru
+## Opsi 1 — WASF Installer (Rekomendasi)
+
+Install installer:
 
 ```bash
-composer create-project wasframework/wasf-app myproject
+composer global require wasframework/wasf-installer
+```
 
+Buat project baru:
+
+```bash
+wasf new myproject
 cd myproject
 ```
 
-### 2️⃣ Setup environment
+## Opsi 2 — Composer
+
+```bash
+composer create-project wasframework/wasf-app myproject
+cd myproject
+```
+
+## Setup Environment
 
 ```bash
 cp .env.example .env
 ```
 
-Isi konfigurasi database:
+Atur database:
 
 ```env
 DB_DRIVER=mysql
@@ -57,13 +78,13 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 3️⃣ Generate Application Key
+## Generate Key
 
 ```bash
 php wasf key:generate
 ```
 
-### 4️⃣ Jalankan Development Server
+## Jalankan Server
 
 ```bash
 php wasf serve
@@ -106,13 +127,7 @@ vendor/
 
 ```php
 $router->get('/', 'HomeController@index');
-```
-
-```php
 $router->get('/user/{id}', 'UserController@show');
-```
-
-```php
 $router->post('/login', 'AuthController@login');
 ```
 
@@ -138,29 +153,17 @@ Modules/Blog/
 
 ```bash
 php wasf make:controller UserController
-```
-
-```bash
 php wasf make:model User
-```
-
-```bash
 php wasf make:migration create_users_table
-```
-
-```bash
 php wasf migrate
 ```
 
 ---
 
-# 🔧 Konfigurasi Tambahan
+# 🔧 Utilitas Tambahan
 
 ```bash
 php wasf route:list
-```
-
-```bash
 php wasf clear:view
 ```
 
@@ -176,32 +179,31 @@ composer dump-autoload
 
 # 🧵 Kontribusi
 
-1. Fork repository  
-2. Buat branch feature baru  
-3. Commit perubahan  
-4. Buat pull request ke `main`  
+1. Fork repository
+2. Buat branch feature baru
+3. Commit perubahan
+4. Pull request ke `main`
 
 ---
 
 # 🛡 Keamanan
 
 Laporkan masalah keamanan ke:
-
-📧 **wasuryanto3@gmail.com**
+📧 **[wasuryanto3@gmail.com](mailto:wasuryanto3@gmail.com)**
 
 ---
 
 # 🗺️ Roadmap
 
-- [ ] Routing middleware  
-- [ ] CSRF Protection  
-- [ ] Session Encryption  
-- [ ] Built-in Authentication  
-- [ ] Database Migration Tracking  
-- [ ] Validation System  
-- [ ] Websocket Support  
-- [ ] CLI Installer  
-- [ ] Debug Toolbar  
+* Routing middleware 
+* CSRF Protection
+* Session Encryption
+* Built-in Authentication
+* Database Migration Tracking
+* Validation System
+* ebsocket Support
+* CLI Installer
+* Debug Toolbar
 
 ---
 
@@ -211,7 +213,7 @@ MIT License
 
 ---
 
-# 🧵 Repositori Resmi
+# 🧵 Repositori
 
-Core: https://github.com/abesarrr/wasf-core  
-App Template: https://github.com/abesarrr/wasf-app  
+* **Core:** [https://github.com/WASFramework/wasf-core](https://github.com/abesarrr/wasf-core)
+* **App Template:** [https://github.com/WASFramework/wasf-app](https://github.com/abesarrr/wasf-app)

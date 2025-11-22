@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="auto">
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title', config('app.name')) - {{ config('app.name') }}<</title>
+    <title>@yield('title', config('app.name')) - {{ config('app.name') }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

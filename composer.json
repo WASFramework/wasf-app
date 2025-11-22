@@ -15,7 +15,7 @@
 
   "require": {
     "php": ">=8.1",
-    "wasframework/wasf-core": "v2.0.5",
+    "wasframework/wasf-core": "v3.0.0",
     "carbonphp/carbon-doctrine-types": "3.2.0",
     "nesbot/carbon": "3.10.3",
     "psr/clock": "1.0.0",

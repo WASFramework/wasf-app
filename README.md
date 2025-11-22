@@ -71,7 +71,7 @@ php wasf serve
 Akses:
 
 ```
-http://localhost:8080
+http://localhost:8000
 ```
 
 ---
@@ -154,10 +154,6 @@ php wasf migrate
 ---
 
 # 🔧 Konfigurasi Tambahan
-
-```bash
-php wasf serve --port=9090
-```
 
 ```bash
 php wasf route:list

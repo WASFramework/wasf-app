@@ -10,10 +10,6 @@
     {
       "type": "vcs",
       "url": "git@github.com:wasframework/wasf-app.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:wasframework/wasf-core.git"
     }
   ],
 

@@ -5,7 +5,7 @@
 WASF adalah framework PHP modern yang mengusung konsep sederhana, modular, dan mudah dikembangkan. Dibangun dengan pendekatan HMVC, Blade templating, dan console command, WASF cocok untuk developer yang ingin membuat aplikasi cepat tanpa kompleksitas berlebihan.
 
 <p align="center">
-  <img src="" alt="WASF Logo" width="180px">
+  <img src="https://github.com/abesarrr/wasf-app/blob/main/public/assets/img/favicon-16.png?raw=true" alt="WASF Logo" width="180px">
 </p>
 
 <p align="center">

@@ -26,11 +26,11 @@ $vscodeUrl = "vscode://file/" . str_replace("\\", "/", $absPath);
     </p>
 
     <div class="mt-5 fade-up d-flex gap-3 justify-content-center flex-wrap">
-        <a href="/docs" class="neon-btn neon-btn-primary">
+        <a href="/docs" class="neon-btn neon-btn-primary" target="blank">
             Documentation
         </a>
 
-        <a href="https://github.com" class="neon-btn neon-btn-secondary">
+        <a href="https://github.com/WASFramework" class="neon-btn neon-btn-secondary" target="blank">
             GitHub
         </a>
     </div>

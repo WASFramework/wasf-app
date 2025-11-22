@@ -1,5 +1,5 @@
 {
-  "name": "abesarrr/wasf-app",
+  "name": "wasframework/wasf-app",
   "description": "WASF Framework Application Skeleton",
   "type": "project",
 
@@ -9,7 +9,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/abesarrr/wasf-core"
+      "url": "https://github.com/WASFramework/wasf-core"
     }
   ],
 

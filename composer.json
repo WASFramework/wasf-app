@@ -9,7 +9,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/wasframework/wasf-core"
+      "url": "git@github.com:WASFramework/wasf-app.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:WASFramework/wasf-core.git"
     }
   ],
 

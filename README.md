@@ -195,5 +195,5 @@ MIT License
 
 # 🧵 Repositori
 
-* **Core:** [https://github.com/WASFramework/wasf-core](https://github.com/abesarrr/wasf-core)
-* **App Template:** [https://github.com/WASFramework/wasf-app](https://github.com/abesarrr/wasf-app)
+* **Core:** [https://github.com/WASFramework/wasf-core](https://github.com/WASFramework/wasf-core)
+* **App Template:** [https://github.com/WASFramework/wasf-app](https://github.com/WASFramework/wasf-app)

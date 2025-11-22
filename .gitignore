@@ -1,3 +1,4 @@
 /vendor
 /storage/views/*
 /public/storage/logs/*
+composer.lock

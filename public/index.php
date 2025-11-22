@@ -57,7 +57,6 @@ try {
 
     $route = $router->dispatch($method, $uri);
 
-    // AUTO 404 — lempar ke exception handler
     if (!$route) {
         throw new HttpException(404, "Route {$uri} tidak ditemukan.");
     }
@@ -78,6 +77,11 @@ try {
     echo $response;
 
 } catch (\Throwable $e) {
-    // Langsung lempar — Handler akan tampilkan 403/404/500
-    throw $e;
+
+    // LANGSUNG serahkan ke Handler
+    Handler::handleException($e);
+
+    // sangat penting: exit supaya tidak lanjut kode
+    exit;
 }
+

@@ -3,7 +3,7 @@
 return [
     'version' => env('APP_VERSION', '1.1.0'),
     'name' => env('APP_NAME', 'WasFramework'),
-    'env'  => env('APP_ENV', 'local'),
+    'env'  => env('APP_ENV', 'development'),
     'debug' => env('APP_DEBUG', true),
     'url' => env('APP_URL', 'http://localhost'),
     'timezone' => env('TIME_ZONE', 'Asia/Jakarta'),

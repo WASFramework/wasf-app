@@ -7,7 +7,7 @@
 <?php
 $version   = config('app.version');
 $appName   = config('app.name');
-$isProd    = env('APP_ENV') === 'production';
+$isProd    = config('app.env');
 
 $viewPath  = "app/Views/welcome.wasf.php";
 $absPath   = base_path($viewPath);
@@ -17,7 +17,8 @@ $vscodeUrl = "vscode://file/" . str_replace("\\", "/", $absPath);
 <div class="hero-neon">
 
     <h1 class="neon-title fade-up">
-        Welcome to <?= $appName ?> <?= $isProd ?>
+        Welcome to <br>
+        <?= $appName ?>
     </h1>
 
     <p class="neon-sub mt-2 fade-up">
@@ -36,7 +37,6 @@ $vscodeUrl = "vscode://file/" . str_replace("\\", "/", $absPath);
     </div>
 
 
-    @if(!$isProd)
     <div class="dev-box p-4 mt-5 shadow-sm fade-up mx-auto" style="max-width:650px;">
         <strong class="text-info">Developer Notice</strong>  
         <p class="small mt-2 mb-2">This page is located at:</p>
@@ -46,7 +46,6 @@ $vscodeUrl = "vscode://file/" . str_replace("\\", "/", $absPath);
             Open in VSCode
         </a>
     </div>
-    @endif
 
 </div>
 

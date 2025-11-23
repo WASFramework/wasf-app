@@ -33,37 +33,42 @@ class ProfileController
             return redirect('/login');
         }
 
-        // Data profil
         $data = [
             'name'  => $request->input('name'),
             'email' => $request->input('email'),
         ];
 
-        // Jika upload file ada
+        // Hanya jika user upload foto baru
         if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
 
-            // ambil ekstensi
             $ext = strtolower(pathinfo($_FILES['photo']['name'], PATHINFO_EXTENSION));
 
-            // generate nama file custom via username
+            // Nama file baru berdasarkan username
             $customName = $user->username . '-' . rand(100, 999) . '.' . $ext;
 
-            // Upload pakai putFileAs
-            $filename = Storage::disk('public')->putFileAs('profile', $_FILES['photo'], $customName);
+            // Simpan file
+            $filename = Storage::disk('public')->putFileAs(
+                'profile',
+                $_FILES['photo'],
+                $customName
+            );
 
             if ($filename) {
 
-                // hapus foto lama
-                Storage::disk('public')->safeDelete(
-                    str_replace('/uploads/', '', $user->photo)
-                );
+                // Hapus foto lama HANYA jika ada & bukan default
+                if (!empty($user->photo) && $user->photo !== '/uploads/profile/default.png') {
+                    Storage::disk('public')->safeDelete(
+                        str_replace('/uploads/', '', $user->photo)
+                    );
+                }
 
-                // simpan full path untuk DB
+                // Set foto baru
                 $data['photo'] = '/uploads/profile/' . $filename;
             }
         }
 
-        // Update user
+        // Kalau tidak upload → $data['photo'] TIDAK diubah
+
         $user->update($data);
 
         return redirect('/profile')->with('success', 'Update berhasil!');

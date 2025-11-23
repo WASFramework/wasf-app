@@ -64,6 +64,12 @@ DB_CONNECTION=mysql
 php wasf key:generate
 ```
 
+## Migrate Database
+
+```bash
+php wasf migrate
+```
+
 ## Jalankan Server
 
 ```bash

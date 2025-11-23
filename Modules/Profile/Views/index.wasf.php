@@ -1,11 +1,10 @@
 @extends('layouts.main')
 @section('title', 'My Profile')
 @section('content')
-
+    @flash('success')
+    @flash('error')   
     <div class="container py-5 d-flex justify-content-center">
-        <div class="card shadow-sm" style="max-width: 420px; width: 100%;">
-        @flash('success')
-        @flash('error')    
+        <div class="card shadow-sm" style="max-width: 420px; width: 100%;"> 
         <div class="card-body text-center">
                 <div class="mb-3">
                     @if($user->photo)

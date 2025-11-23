@@ -50,16 +50,13 @@ foreach (glob(__DIR__ . '/../Modules/*/routes.php') as $moduleRoute) {
 /**
  * 6. Dispatch
  */
+
 try {
 
     $method = $_SERVER['REQUEST_METHOD'];
     $uri = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
-    $route = $router->dispatch($method, $uri);
-
-    if (!$route) {
-        throw new HttpException(404, "Route {$uri} tidak ditemukan.");
-    }
+    $route = $router->dispatch($method, $uri); // router kini melempar 404 otomatis
 
     $dispatcher = new \Wasf\Routing\Dispatcher(
         $router->getCollection(),
@@ -78,10 +75,7 @@ try {
 
 } catch (\Throwable $e) {
 
-    // LANGSUNG serahkan ke Handler
     Handler::handleException($e);
-
-    // sangat penting: exit supaya tidak lanjut kode
     exit;
 }
 

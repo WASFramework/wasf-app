@@ -8,9 +8,10 @@ return new class {
         Schema::create("users", function($t){
             $t->id();
             $t->string("name");
+            $t->string("username")->unique();
             $t->string("email")->unique();
             $t->string("password");
-            $t->string("photo");
+            $t->string("photo")->default("/uploads/profile/default.png");
             $t->timestamps();
         });
     }

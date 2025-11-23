@@ -2,6 +2,7 @@
 
 namespace Modules\Profile\Controllers;
 
+use Wasf\Filesystem\Storage;
 use Wasf\Http\Request;
 use Wasf\Http\Response;
 use Modules\Auth\Models\User;
@@ -35,31 +36,34 @@ class ProfileController
         // Data profil
         $data = [
             'name'  => $request->input('name'),
-            'email' => $request->input('email')
+            'email' => $request->input('email'),
         ];
 
         // Jika upload file ada
         if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK) {
 
-            $uploadFolder = base_path('public/uploads/profile');
+            // ambil ekstensi
+            $ext = strtolower(pathinfo($_FILES['photo']['name'], PATHINFO_EXTENSION));
 
-            // Upload file
-            $newFile = upload_file($_FILES['photo'], $uploadFolder);
+            // generate nama file custom via username
+            $customName = $user->username . '-' . rand(100, 999) . '.' . $ext;
 
-            if ($newFile) {
+            // Upload pakai putFileAs
+            $filename = Storage::disk('public')->putFileAs('profile', $_FILES['photo'], $customName);
 
-                // Hapus file lama
-                if ($user->photo) {
-                    $oldFile = $uploadFolder . '/' . $user->photo;
-                    if (file_exists($oldFile)) unlink($oldFile);
-                }
+            if ($filename) {
 
-                // Set foto baru
-                $data['photo'] = $newFile;
+                // hapus foto lama
+                Storage::disk('public')->safeDelete(
+                    str_replace('/uploads/', '', $user->photo)
+                );
+
+                // simpan full path untuk DB
+                $data['photo'] = '/uploads/profile/' . $filename;
             }
         }
 
-        // Update
+        // Update user
         $user->update($data);
 
         return redirect('/profile')->with('success', 'Update berhasil!');

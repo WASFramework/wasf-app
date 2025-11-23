@@ -4,16 +4,14 @@
 
 @section('content')
 
-@flash('success')
-@flash('error')
-
-@error('email')
-    <div class="alert alert-danger">{{ $message }}</div>
-@enderror
-
 <div class="row justify-content-center">
     <div class="col-md-5">
+        @flash('success')
+        @flash('error')
 
+        @error('email')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <div class="card shadow-lg border-0 rounded-4 p-4"
              style="background: rgba(30,30,46,0.75); backdrop-filter: blur(12px);">
 
@@ -33,6 +31,12 @@
                     <label class="form-label fw-semibold">Email</label>
                     <input type="email" name="email" class="form-control form-control-lg rounded-3"
                            placeholder="Masukkan email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Username</label>
+                    <input type="text" name="username" class="form-control form-control-lg rounded-3"
+                           placeholder="Masukkan username anda" required>
                 </div>
 
                 <div class="mb-4">

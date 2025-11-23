@@ -302,11 +302,11 @@ main { flex: 1; }
         @auth
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle p-0" data-bs-toggle="dropdown">
-            <img src="{{ auth()->user()->photo ? '/uploads/profile/' . auth()->user()->photo : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) }}"
+            <img src="{{ auth()->user()->photo ? '' . auth()->user()->photo : 'https://ui-avatars.com/api/?name=' . urlencode(auth()->user()->name) }}"
                  class="avatar-sm shadow-sm">
           </a>
           <ul class="dropdown-menu dropdown-menu-end shadow">
-            <li class="dropdown-item">{{ auth()->user()->name }}</li>
+            <li><a href="/profile" class="dropdown-item">{{ auth()->user()->name }}</a></li>
             <li><a href="/profile" class="dropdown-item"><i class="bi bi-person me-2"></i>Profile</a></li>
             <li><a href="/profile/edit" class="dropdown-item"><i class="bi bi-gear me-2"></i>Settings</a></li>
             <li><hr></li>

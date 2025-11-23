@@ -2,14 +2,11 @@
 @section('title', 'Edit Profile')
 @section('content')
 
-    @flash('success')
-    @flash('error')
-
     <div class="container py-4">
-
         <div class="row justify-content-center">
             <div class="col-md-6">
-
+                @flash('success')
+                @flash('error')
                 <div class="card shadow-sm">
                     <div class="card-body">
 
@@ -35,7 +32,7 @@
 
                                 @if($user->photo)
                                     <div class="mt-2">
-                                        <img src="/uploads/profile/{{ $user->photo }}" 
+                                        <img src="{{ $user->photo }}" 
                                              class="img-thumbnail" width="120">
                                     </div>
                                 @endif

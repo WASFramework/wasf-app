@@ -6,19 +6,15 @@
 
 <div class="row justify-content-center">
     <div class="col-md-5">
-
+        @flash('error')
+        @flash('success')
         <div class="card shadow-lg border-0 rounded-4 p-4"
              style="background: rgba(30,30,46,0.75); backdrop-filter: blur(12px);">
-
+            
             <h3 class="fw-bold text-center mb-4 text-primary">
                 <i class="bi bi-shield-lock-fill"></i> Login
             </h3>
-
             <form method="POST" action="/login">
-
-                @flash('error')
-                @flash('success')
-
                 <div class="mb-3">
                     <label>Email</label>
                     <input name="email" type="email" class="form-control" value="{{ old('email') }}">

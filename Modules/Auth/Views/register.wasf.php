@@ -14,7 +14,9 @@
             <h3 class="fw-bold text-center mb-4 text-primary">
                 <i class="bi bi-person-plus-fill"></i> Register
             </h3>
-            <form method="POST" action="{{ url('register') }}">
+
+            <form method="POST" action="/register" class="mt-3">
+
                 <div class="mb-3">
                     <label class="form-label fw-semibold">Nama Lengkap</label>
                     <input type="text" name="name" class="form-control form-control-lg rounded-3"
@@ -25,6 +27,13 @@
                     <input type="email" name="email" class="form-control form-control-lg rounded-3"
                            placeholder="Masukkan email" required>
                 </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Username</label>
+                    <input type="text" name="username" class="form-control form-control-lg rounded-3"
+                           placeholder="Masukkan username anda" required>
+                </div>
+
                 <div class="mb-4">
                     <label class="form-label fw-semibold">Password</label>
                     <input type="password" name="password" class="form-control form-control-lg rounded-3"

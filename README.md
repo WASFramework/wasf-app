@@ -44,10 +44,17 @@ graph TD
 
 # ⚡ Instalasi
 
-## Opsi 1 — WASF Installer
+## Opsi 1 — WASF Installer (Rekomendasi)
+
+Install installer:
 
 ```bash
 composer global require wasframework/wasf-installer
+```
+
+Buat project baru:
+
+```bash
 wasf new myproject
 cd myproject
 ```
@@ -66,6 +73,11 @@ cd myproject
 ```bash
 cp .env.example .env
 php wasf key:generate
+```
+
+## Jalankan Server
+
+```bash
 php wasf serve
 ```
 

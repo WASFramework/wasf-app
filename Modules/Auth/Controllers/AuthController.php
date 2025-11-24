@@ -22,11 +22,25 @@ class AuthController
     {
         $data = $request->validate([
             'name'     => 'required|min:3|max:100',
-            'username'    => 'required|username|unique:users,username',
             'email'    => 'required|email|unique:users,email',
             'password' => 'required|min:6'
         ]);
 
+        // Extract username dari email
+        $username = strtolower(strtok($data['email'], '@'));
+
+        // Pastikan unique
+        $original = $username;
+        $i = 1;
+
+        while (User::where('username', $username)->exists()) {
+            $username = $original . $i;
+            $i++;
+        }
+
+        $data['username'] = $username;
+
+        // Hash password
         $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
 
         User::create($data);

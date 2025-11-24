@@ -22,11 +22,25 @@ class AuthController
     {
         $data = $request->validate([
             'name'     => 'required|min:3|max:100',
-            'username'    => 'required|username|unique:users,username',
             'email'    => 'required|email|unique:users,email',
             'password' => 'required|min:6'
         ]);
 
+        // Extract username dari email
+        $username = strtolower(strtok($data['email'], '@'));
+
+        // Pastikan unique
+        $original = $username;
+        $i = 1;
+
+        while (User::where('username', $username)->exists()) {
+            $username = $original . $i;
+            $i++;
+        }
+
+        $data['username'] = $username;
+
+        // Hash password
         $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
 
         User::create($data);
@@ -36,19 +50,28 @@ class AuthController
 
     public function login(Request $request)
     {
-        // VALIDATE INPUT
-        $credentials = $request->validate([
-            'email'    => 'required|email',
+        // VALIDASI INPUT
+        $data = $request->validate([
+            'login'    => 'required|string',   // bisa email, bisa username
             'password' => 'required'
         ]);
-
-        // LOGIN VIA GUARD ( Laravel: auth()->attempt($credentials) )
-        $user = auth()->attempt($credentials);
-
-        if (!$user) {
-            return redirect('/login')->with('error', 'Email atau password salah')->send();
+    
+        $login = $data['login'];
+        $password = $data['password'];
+    
+        // DETEKSI EMAIL ATAU USERNAME
+        $field = filter_var($login, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+    
+        // CARI USER
+        $user = User::where($field, $login)->first();
+    
+        if (!$user || !password_verify($password, $user->password)) {
+            return redirect('/login')->with('error', 'Email/Username atau password salah')->send();
         }
-
+    
+        // SET SESSION LOGIN
+        auth()->login($user);
+    
         return redirect('/profile')->with('success', 'Login berhasil!')->send();
     }
 

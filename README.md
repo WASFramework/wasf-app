@@ -1,34 +1,53 @@
-# 🚀 WASF PHP Framework
+# WASF PHP Framework — Extended Edition 🚀
+
+![Badge](https://img.shields.io/badge/WASF-Framework-blue)
+![Version](https://img.shields.io/badge/WASF-v3.1.5-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
+![PHP](https://img.shields.io/badge/PHP-8.1%2B-purple)
+
+---
+
+# 📸 Screenshot
+
+![App Screenshot](https://github.com/abesarrr/wasf-app/blob/main/Welcome-Wasframwork-11-24-2025_06_03_PM.png?raw=true)
+
+---
+
+# 🧬 Arsitektur WASF (Diagram)
+
+```mermaid
+graph TD
+    A[public/index.php] --> B[Bootstrap]
+    B --> C[Routing]
+    C --> D[Controller]
+    D --> E[Model]
+    D --> F[View]
+    E --> G[Database Layer]
+    F --> H[WASF Templating]
+```
 
 ---
 
 # ✨ Fitur Utama
 
-* ⚡ **Super Lightweight** — cepat, kecil, dan hemat resource
-* 🧩 **Arsitektur HMVC Modular**
-* 🧱 **Blade Templating Engine**
-* 🛠 **Powerful Console Commands**
-* 🧬 **Autoloading PSR-4 Composer**
-* 🔐 **Dukungan .env**
-* 🔑 **WASF_KEY Generator**
-* 🗄 **PDO Database Wrapper**
-* 📦 **Extensible — mudah dikembangkan**
+* Super Lightweight & Fast  
+* HMVC Modular Architecture  
+* Blade Templating Engine  
+* WASF Console Commands  
+* PDO Database Wrapper  
+* .env Loader & Config Manager  
+* PSR-4 Autoloading  
+* Extendable & Clean Structure  
 
 ---
 
 # ⚡ Instalasi
 
-## Opsi 1 — WASF Installer (Rekomendasi)
-
-Install installer:
+## Opsi 1 — WASF Installer
 
 ```bash
 composer global require wasframework/wasf-installer
-```
-
-Buat project baru:
-
-```bash
 wasf new myproject
 cd myproject
 ```
@@ -40,160 +59,86 @@ composer create-project wasframework/wasf-app myproject
 cd myproject
 ```
 
-## Setup Environment
+---
+
+# 🔑 Setup Aplikasi
 
 ```bash
 cp .env.example .env
-```
-
-Atur database:
-
-```env
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=wasf_database
-DB_USER=root
-DB_PASS=
-DB_CHARSET=utf8mb4
-DB_CONNECTION=mysql
-```
-
-## Generate Key
-
-```bash
 php wasf key:generate
-```
-
-## Jalankan Server
-
-```bash
 php wasf serve
 ```
 
-Akses:
-
-```
-http://localhost:8000
-```
+Akses:  
+`http://localhost:8000`
 
 ---
 
-# 📚 Struktur Direktori
+# 🧱 Struktur Direktori
 
 ```txt
 app/
  ├─ Controllers/
  ├─ Models/
  └─ Views/
-bootstrap/
-config/
-public/
-resources/
 Modules/
- └─ Blog/
-     ├─ Controllers/
-     ├─ Models/
-     ├─ Views/
-     └─ routes.php
 routes/
- └─ web.php
+public/
 storage/
-vendor/
 ```
 
 ---
 
-# 🧱 Routing
+# 🧪 Migration Example
 
 ```php
-$router->get('/', 'HomeController@index');
-$router->get('/user/{id}', 'UserController@show');
-$router->post('/login', 'AuthController@login');
+<?php
+
+use Wasf\Database\Schema;
+
+return new class {
+    public function up()
+    {
+        Schema::create("users", function($t){
+            $t->id();
+            $t->string("name");
+            $t->string("username")->unique();
+            $t->string("email")->unique();
+            $t->string("password");
+            $t->string("photo")->default("/uploads/profile/default.png");
+            $t->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists("users");
+    }
+};
 ```
 
 ---
 
-# 🧩 Module HMVC
-
-```bash
-php wasf make:module Blog
-```
-
-```txt
-Modules/Blog/
- ├─ Controllers/
- ├─ Models/
- ├─ Views/
- └─ routes.php
-```
-
----
-
-# 🛠 Generator CLI
+# 🔧 CLI Commands
 
 ```bash
 php wasf make:controller UserController
 php wasf make:model User
 php wasf make:migration create_users_table
 php wasf migrate
-```
-
----
-
-# 🔧 Utilitas Tambahan
-
-```bash
 php wasf route:list
 php wasf clear:view
 ```
 
 ---
 
-# 🧪 Mode Development
-
-```bash
-composer dump-autoload
-```
-
----
-
-# 🧵 Kontribusi
-
-1. Fork repository
-2. Buat branch feature baru
-3. Commit perubahan
-4. Pull request ke `main`
-
----
-
 # 🛡 Keamanan
 
 Laporkan masalah keamanan ke:
-📧 **[wasuryanto3@gmail.com](mailto:wasuryanto3@gmail.com)**
-
----
-
-# 🗺️ Roadmap
-
-* Routing middleware 
-* CSRF Protection
-* Session Encryption
-* Built-in Authentication
-* Database Migration Tracking
-* Validation System
-* ebsocket Support
-* CLI Installer
-* Debug Toolbar
+Kontak: **wasuryanto3@gmail.com**
 
 ---
 
 # 📄 Lisensi
 
 MIT License
-
----
-
-# 🧵 Repositori
-
-* **Core:** [https://github.com/WASFramework/wasf-core](https://github.com/WASFramework/wasf-core)
-* **App Template:** [https://github.com/WASFramework/wasf-app](https://github.com/WASFramework/wasf-app)

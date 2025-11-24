@@ -19,7 +19,7 @@
                 <i class="bi bi-person-plus-fill"></i> Register
             </h3>
 
-            <form method="POST" action="/register" class="mt-3">
+            <form method="POST" action="{{ url('register') }}" class="mt-3">
 
                 <div class="mb-3">
                     <label class="form-label fw-semibold">Nama Lengkap</label>
@@ -47,7 +47,7 @@
 
             <div class="text-center mt-4">
                 <span class="text-secondary">Sudah punya akun?</span>
-                <a href="/login" class="fw-semibold text-primary">Login</a>
+                <a href="{{ url('login') }}" class="fw-semibold text-primary">Login</a>
             </div>
 
         </div>

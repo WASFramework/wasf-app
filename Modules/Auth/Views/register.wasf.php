@@ -33,12 +33,6 @@
                            placeholder="Masukkan email" required>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label fw-semibold">Username</label>
-                    <input type="text" name="username" class="form-control form-control-lg rounded-3"
-                           placeholder="Masukkan username anda" required>
-                </div>
-
                 <div class="mb-4">
                     <label class="form-label fw-semibold">Password</label>
                     <input type="password" name="password" class="form-control form-control-lg rounded-3"

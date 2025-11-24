@@ -14,21 +14,15 @@
             <h3 class="fw-bold text-center mb-4 text-primary">
                 <i class="bi bi-shield-lock-fill"></i> Login
             </h3>
-            <form method="POST" action="/login">
+            <form method="POST" action="{{ url('login') }}">
                 <div class="mb-3">
-                    <label>Email</label>
-                    <input name="email" type="email" class="form-control" value="{{ old('email') }}">
-                    @error('email')
-                        <small class="text-danger">{{ $message }}</small>
-                    @enderror
+                    <label>Email / Username</label>
+                    <input name="login" type="text" class="form-control" placeholder="Email atau Username">
                 </div>
 
                 <div class="mb-3">
                     <label>Password</label>
                     <input name="password" type="password" class="form-control">
-                    @error('password')
-                        <small class="text-danger">{{ $message }}</small>
-                    @enderror
                 </div>
 
                 <button class="btn btn-primary w-100">Login</button>
@@ -36,7 +30,7 @@
 
             <div class="text-center mt-4">
                 <span class="text-secondary">Belum punya akun?</span>
-                <a href="/register" class="fw-semibold text-primary">Register</a>
+                <a href="{{ url('register') }}" class="fw-semibold text-primary">Register</a>
             </div>
 
         </div>

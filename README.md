@@ -18,22 +18,7 @@
 
 # ⚡ Instalasi
 
-## Opsi 1 — WASF Installer (Rekomendasi)
-
-Install installer:
-
-```bash
-composer global require wasframework/wasf-installer
-```
-
-Buat project baru:
-
-```bash
-wasf new myproject
-cd myproject
-```
-
-## Opsi 2 — Composer
+## Use Composer
 
 ```bash
 composer create-project wasframework/wasf-app myproject
